@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[packages]
+fastapi = "*"
+uvicorn = "*"
+pydantic = "*"
+pydantic-settings = "*"
+sqlalchemy = "*"
+python-jose = "*"
+psycopg2-binary = "*"
+passlib = "*"
+pyyaml = "*"
+bcrypt = "*"
+
+[dev-packages]
+pytest = "*"
+
+# formatter
+yapf = "*"
+
+# linter
+pylint = "*"
+
+[requires]
+python_version = "3.12"
