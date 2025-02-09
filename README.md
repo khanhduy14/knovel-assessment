@@ -171,3 +171,21 @@ docker-compose down
         }
     ]
     ```
+
+7 (Optional). **Create an user**
+
+    ```sh
+    #Create an employee
+    curl -X POST "http://localhost:8080/v1/users" -H "Content-Type: application/json" -d '{
+        "username": "test-employee",
+        "password": "test-employee",
+        "role": "Employee"
+    }'
+
+    #Create an employer
+    curl -X POST "http://localhost:8080/v1/users" -H "Content-Type: application/json" -d '{
+        "username": "test-employer",
+        "password": "test-employer",
+        "role": "Employer"
+    }'
+    ```
