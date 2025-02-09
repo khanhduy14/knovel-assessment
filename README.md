@@ -74,8 +74,8 @@ docker-compose down
     curl -X POST "http://localhost:8080/v1/tasks" -H "Authorization: Bearer employer_token" -H "Content-Type: application/json" -d '{
         "title": "Sample Task",
         "description": "This is a sample task",
-        "due_date": "2023-12-31T23:59:59",
-        "assignee_id": "employee_uuid"
+        "due_date": "2023-12-31",
+        "assignee_id": "5023b690-2295-4729-b843-677867a3d386"
     }'
     ```
 
